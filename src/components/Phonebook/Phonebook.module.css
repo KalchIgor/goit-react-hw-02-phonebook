@@ -1,23 +1,36 @@
 .container {
     border: 2px solid black;
     border-radius: 4px;
-    max-width: 450px;
+    max-width: 560px;
     padding: 20px;
+    margin: auto;
+    margin-top:20px;
+    box-shadow: 0 10px 10px 5px rgba(0, 0, 0, .5);
+    background: #19bde2;
 }
 
 h2 {
-    margin-top: 14px;
+    max-width: 260px;
+    margin:20px auto;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, .4);
 }
 
 .inputForm {
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
+   
 }
 
 .label {
     margin-bottom: 10px;
-}
+    margin: auto;
+  
+        }
 
 .input {
     width: 240px;
@@ -25,14 +38,20 @@ h2 {
     border: 1px solid black;
     border-radius: 4px;
     cursor: pointer;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, .4);
 }
 
 .inputForm__button {
     font-size: 12px;
     border-color: transparent;
+    border-radius: 4px;
     background-color: rgb(238, 237, 237);
     transition: background-color 500ms linear, color 500ms linear;
     cursor: pointer;
+    margin: auto;
+    display: block;
 }
 
 .inputForm__button:hover,
@@ -53,6 +72,7 @@ h2 {
     border: 1px solid black;
     border-radius: 4px;
     padding: 8px;
+    box-shadow: 0 20px 20px 5px rgba(0, 0, 0, .8);
 }
 
 .contacts {
@@ -62,6 +82,8 @@ h2 {
 .contactlist {
     margin-bottom: 10px;
     padding-left: 4px;
+    display: flex;
+        justify-content: center;
 }
 
 .contactlist__button {
