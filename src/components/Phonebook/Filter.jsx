@@ -1,28 +1,19 @@
+import React from "react";
 import PropTypes from "prop-types";
 import css from "./Phonebook.module.css";
 
-export default function Contactlist({items, removeContact}) {
-  const elements = items.map(({ name, number, id }) => {
-      return <li className={css.contactlist} key={id}>
-          {name}: {number}
-          <span className={css.contactlist__button} onClick={() => removeContact(id)}>
-              Delete
-          </span>
-      </li>
-  })
+export default function Filter({ value, onChangeFilter }) {
   return (
-      <ul>
-          {elements}
-      </ul>
+    <div className={css.filter}>
+    <label className={css.label} > Find contacts by name </label>
+    <input className={css.input} type="text" name="filter" value={value} 
+    onChange={(e) => onChangeFilter(e.target.value)}/>
+    </div>
     )
-    
 }
 
-Contactlist.propTypes = {
-  removeContact: PropTypes.func.isRequired,
-  items: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    number: PropTypes.string.isRequired,
-})),
-}
+
+Filter.propTypes = {
+  value: PropTypes.string.isRequired,
+  onChangeFilter: PropTypes.func.isRequired,
+};

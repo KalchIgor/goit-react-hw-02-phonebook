@@ -1,9 +1,7 @@
-import { nanoid } from 'nanoid';
-import PropTypes from 'prop-types';
-import css from "./Phonebook/Phonebook.module.css";
-
-//model.id = nanoid() //=> "V1StGXR8_Z5jdHi6B-myT"
-
+import React, { Component } from "react";
+import { nanoid } from "nanoid";
+import PropTypes from "prop-types";
+import css from "./Phonebook.module.css";
 
 export default class PhonebookAdd extends Component {
     state = {
