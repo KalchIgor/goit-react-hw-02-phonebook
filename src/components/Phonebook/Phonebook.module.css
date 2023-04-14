@@ -83,14 +83,15 @@ h2 {
     margin-bottom: 10px;
     padding-left: 4px;
     display: flex;
-        justify-content: center;
+    justify-content: space-between;
 }
 
 .contactlist__button {
     background-color: rgb(238, 237, 237);
-    border: 1px solid rgb(238, 237, 237);
-    padding-left: 4px;
-    padding-right: 4px;
+    border: 1px solid rgb(26, 19, 19);
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-left: 4px;
     font-size: 12px;
     transition: background-color 500ms linear, color 500ms linear;
