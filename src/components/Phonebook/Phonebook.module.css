@@ -96,6 +96,7 @@ h2 {
     font-size: 12px;
     transition: background-color 500ms linear, color 500ms linear;
     cursor: pointer;
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, .5);
 }
 
 .contactlist__button:hover,
